@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swift Broadband</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #0077cc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img {
+            height: 60px;
+        }
+
+        .intro {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #fff;
+        }
+
+        .intro h2 {
+            color: #0077cc;
+        }
+
+        .tagline-section {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #e0f0ff;
+        }
+
+        .tagline-section h2 {
+            font-size: 28px;
+            font-weight: bold;
+            color: #0077cc;
+            margin-bottom: 10px;
+        }
+
+        .tagline-section p {
+            font-size: 16px;
+            color: #555;
+            max-width: 600px;
+            margin: 0 auto 20px;
+        }
+
+        .reasons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .reason {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .reason img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .reason h3 {
+            color: #0077cc;
+            margin-bottom: 10px;
+        }
+
+        .plans {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .plan {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .plan:hover {
+            transform: translateY(-5px);
+        }
+
+        .plan h3 {
+            color: #0077cc;
+        }
+
+        .plan .price {
+            font-size: 24px;
+            color: #ff6600;
+            margin: 10px 0;
+        }
+
+        .plan .best-use {
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+
+        .contact-section {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #f0f0f0;
+        }
+
+        .contact-section h2 {
+            color: #0077cc;
+            margin-bottom: 20px;
+        }
+
+        .contact-links a {
+            display: block;
+            margin: 10px 0;
+            color: #0077cc;
+            font-size: 18px;
+            text-decoration: underline;
+        }
+
+        .contact-links a:hover {
+            color: #ff6600;
+        }
+
+        .back-to-top {
+            display: block;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #0077cc;
+            text-decoration: none;
+        }
+
+        .back-to-top:hover {
+            color: #ff6600;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0077cc;
+            color: white;
+            margin-top: 40px;
+            position: relative;
+        }
+
+        .footer-contact a {
+            display: block;
+            margin: 5px 0;
+            color: white;
+            font-size: 16px;
+            text-decoration: underline;
+        }
+
+        .footer-contact a:hover {
+            color: #ffcc00;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="swiftbroadband-logo.png" alt="Swift Broadband Logo">
+        <h1>Swift Broadband</h1>
+    </header>
+
+    <div class="intro">
+        <h2>Affordable Pricing Plans for Everyone</h2>
+        <p>We offer straightforward plans designed to meet your needs without breaking the bank.</p>
+    </div>
+
+    <div class="tagline-section">
+        <h2>You're here because you want the best</h2>
+        <p>We think this is what makes us stand out</p>
+
+        <div class="reasons">
+            <div class="reason">
+                <img src="browsing-image1.jpg" alt="Fast browsing">
+                <h3>Blazing Fast Speeds</h3>
+                <p>Enjoy seamless streaming, gaming, and browsing with our high-speed connections.</p>
+            </div>
+
+            <div class="reason">
+                <img src="browsing-image2.jpg" alt="Reliable service">
+                <h3>Reliable Connectivity</h3>
+                <p>Stay connected anytime with our highly reliable and stable internet service.</p>
+            </div>
+
+            <div class="reason">
+                <img src="browsing-image3.jpg" alt="Excellent support">
+                <h3>Excellent Support</h3>
+                <p>Our dedicated support team is here to assist you 24/7 with any issues or questions.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="plans">
+        <div class="plan">
+            <h3>10 Mbps Plan</h3>
+            <div class="price">KES 2000 / month</div>
+            <div class="best-use">Best for casual browsing & emails</div>
+            <ul>
+                <li>Up to 10 Mbps</li>
+                <li>Unlimited data</li>
+                <li>24/7 Support</li>
+            </ul>
+        </div>
+
+        <div class="plan">
+            <h3>20 Mbps Plan</h3>
+            <div class="price">KES 2500 / month</div>
+            <div class="best-use">Best for streaming & smart homes</div>
+            <ul>
+                <li>Up to 20 Mbps</li>
+                <li>Unlimited data</li>
+                <li>24/7 Support</li>
+            </ul>
+        </div>
+
+        <div class="plan">
+            <h3>30 Mbps Plan</h3>
+            <div class="price">KES 3000 / month</div>
+            <div class="best-use">Best for businesses & video conferencing</div>
+            <ul>
+                <li>Up to 30 Mbps</li>
+                <li>Unlimited data</li>
+                <li>Priority support</li>
+            </ul>
+        </div>
+
+        <div class="plan">
+            <h3>40 Mbps Plan</h3>
+            <div class="price">KES 4000 / month</div>
+            <div class="best-use">Best for gamers & ultra HD streaming</div>
+            <ul>
+                <li>Up to 40 Mbps</li>
+                <li>Unlimited data</li>
+                <li>Dedicated line</li>
+                <li>Priority support</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <h2>Contact Us</h2>
+        <div class="contact-links">
+            <a href="tel:0111054444">Call Us: 0111054444</a>
+            <a href="https://wa.me/254111054444" target="_blank">WhatsApp Us: 0111054444</a>
+            <a href="mailto:info@swiftbroadband.com">Email Us: info@swiftbroadband.com</a>
+        </div>
+        <a class="back-to-top" href="#top">Back to Top ↑</a>
+    </div>
+
+    <footer>
+        &copy; 2025 Swift Broadband. All rights reserved.
+        <div class="footer-contact">
+            <a href="tel:0111054444">Call Us: 0111054444</a>
+            <a href="https://wa.me/254111054444" target="_blank">WhatsApp Us: 0111054444</a>
+            <a href="mailto:info@swiftbroadband.com">Email Us: info@swiftbroadband.com</a>
+        </div>
+    </footer>
+
+</body>
+</html>
